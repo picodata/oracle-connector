@@ -1,0 +1,8 @@
+services:
+  oracle:
+    image: docker-picodata.binary.picodata.io/oracle-db:12.2.0.1-se2
+    environment:
+      - ORACLE_PDB=tnt
+      - ORACLE_PWD=tntPswd
+      - ORACLE_MEM=2000
+    network_mode: host
